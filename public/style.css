@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(35, 81, 42);
+    width: 50%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h3 {
+    color: rgb(218, 51, 51);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h4 {
+    color: rgb(218, 51, 51);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h6 {
+    color: rgb(253, 253, 253);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#list {
+    display: flexbox;
+    width: 400px;
+}
+
+.firstName,
+.lastName {
+    border: 2px solid #650011;
+}
+
+canvas {
+    background-color: aliceblue;
+    border: 2px solid #650011;
+}

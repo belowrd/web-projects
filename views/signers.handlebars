@@ -1,0 +1,13 @@
+<h3>
+    YOU ARE IN GOOD COMPANY:
+</h3>
+
+<div class="signers">
+    {{#signers}}
+        <a href="{{url}}">{{first_name}}</a>
+        {{last_name}}
+        {{age}}
+        <a href="/signers/{{city}}">{{city}}</a>
+        <br />
+    {{/signers}}
+</div>

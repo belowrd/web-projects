@@ -1,0 +1,82 @@
+<h4 id="title">
+            edit profile
+        </h4>
+
+
+    </div>
+
+    <div id="right-mid">
+
+        <form method="post">
+
+            {{#signers}}
+                <input
+                    class="form-style"
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="First Name"
+                    value="{{firstname}}"
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Last Name"
+                    value="{{lastname}}"
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email Adress"
+                    value="{{email}}"
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    {{! value="Password" }}
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="text"
+                    id="age"
+                    name="age"
+                    placeholder="Age"
+                    value="{{age}}"
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="City"
+                    value="{{city}}"
+                /><br />
+
+                <input
+                    class="form-style"
+                    type="text"
+                    id="homepage"
+                    name="homepage"
+                    placeholder="Homepage"
+                    value="{{url}}"
+                /><br />
+
+            {{/signers}}
+
+            <button class="form-style" id="submit" type="submit">update</button>
+
+        </form>
+
+    </div>

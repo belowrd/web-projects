@@ -1,13 +1,13 @@
 ///////////////////////////////////////////////////////////////////// S E T  U P
 
 const spicedPg = require("spiced-pg");
-const { USER, PASSWORD, DATABASE_URL } = process.env;
+const { USER, PASSWORD } = process.env;
 
 const user = USER;
 const password = PASSWORD;
 const database = "petition";
 
-const db = spicedPg(DATABASE_URL);
+const db = spicedPg(`postgres:${user}:${password}@localhost:5432/${database}`);
 
 ///////////////////////////////////////////////////////////////// F U N C T I O N S
 

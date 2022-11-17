@@ -6,8 +6,13 @@
 }
 
 body {
-    background-color: rgb(35, 81, 42);
+    background-color: rgba(35, 81, 42, 0.585);
     width: 50%;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 
 h1 {

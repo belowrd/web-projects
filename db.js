@@ -1,13 +1,18 @@
 ///////////////////////////////////////////////////////////////////// S E T  U P
 
 const spicedPg = require("spiced-pg");
-const { USER, PASSWORD, DATABASE_URL } = process.env;
+const { USER, PASSWORD } = process.env;
 
 const user = USER;
 const password = PASSWORD;
 const database = "petition";
 
-const db = spicedPg(DATABASE_URL);
+console.log(`postgres:${user}:${password}@localhost:5432/${database}`);
+
+const db = spicedPg(
+    process.env.DATABASE_URL ||
+        `postgres:${user}:${password}@localhost:5432/${database}`
+);
 
 ///////////////////////////////////////////////////////////////// F U N C T I O N S
 
@@ -97,15 +102,15 @@ function editProfiles({ age, city, url, user_id }) {
 }
 
 // DELETE PROFILE
-function deleteProfile(userId) {
-    return db.query(
-        `
-            DELETE FROM users
-            WHERE id=$1
-        `,
-        [userId]
-    );
-}
+// function deleteProfile(userId) {
+//     return db.query(
+//         `
+//             DELETE FROM users
+//             WHERE id=$1
+//         `,
+//         [userId]
+//     );
+// }
 
 module.exports = {
     updateSupporterList,

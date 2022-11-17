@@ -150,14 +150,14 @@ app.get("/thanks", function (req, res) {
 });
 
 // DELETE SIGNATURE
-app.post("/deletesig", (req, res) => {
-    db.deleteUserSignature(req.session.user_id)
-        .then(() => {
-            req.session.alreadySigned = null;
-            return res.redirect("/petition");
-        })
-        .catch((error) => console.log(error));
-});
+// app.post("/deletesig", (req, res) => {
+//     db.deleteUserSignature(req.session.user_id)
+//         .then(() => {
+//             req.session.alreadySigned = null;
+//             return res.redirect("/petition");
+//         })
+//         .catch((error) => console.log(error));
+// });
 
 /////////////////////////////////////////////////////////// B B s
 

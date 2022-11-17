@@ -15,9 +15,21 @@ body {
     text-align: center;
 }
 
+p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+}
+
 h1 {
     color: rgb(255, 255, 255);
     font-size: 38px;
+    font-weight: 400;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-weight: 400;
 }
 
